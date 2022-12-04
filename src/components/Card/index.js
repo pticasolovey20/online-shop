@@ -29,7 +29,7 @@ const Card = ({ name, price, imgUrl, onFavorite, onPlus }) => {
             <div className="d-flex justify-between align-center">
                 <div className="d-flex flex-column">
                     <span>Price:</span>
-                    <b>{price}</b>
+                    <b>{price} UAH</b>
                 </div>
                 <img
                     className={styles.plus}
