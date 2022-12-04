@@ -1,3 +1,5 @@
+import './style.scss';
+
 const Header = ({ onCart }) => {
     return (
         <header className="d-flex justify-between align-center p-40">
