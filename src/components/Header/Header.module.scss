@@ -1,0 +1,53 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    border-bottom: 1px solid #eaeaea;
+
+    img {
+        margin-right: 15px;
+    }
+
+    h3,
+    p {
+        margin: 0;
+    }
+
+    p{
+        opacity: 0.5;
+    }
+
+    li {
+        list-style-type: none;
+
+        span {  
+            margin-bottom: 10px;
+            position: relative;
+            top: -3px;
+        }
+    }
+
+    .logoWrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .customButton {
+        display: flex;
+
+        li:nth-child(1) {
+            margin-right: 30px;
+        }
+
+        li:nth-child(2) {
+            margin-right: 20px;
+        }
+
+        img {
+            cursor: pointer;
+        }
+    }
+}
+
+

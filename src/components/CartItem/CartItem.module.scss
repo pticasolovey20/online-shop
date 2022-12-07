@@ -1,4 +1,7 @@
 .cartItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
     border: 1px solid #f3f3f3;
     border-radius: 10px;
     overflow: hidden;
@@ -23,7 +26,16 @@
         font-size: 14px;
     }
 
-    .remove-button {
+    .description {
+        margin-right: 20px;
+        flex: 1;
+
+        p{
+            margin-bottom: 5px;
+        }
+    }
+
+    .removeButton {
         opacity: 0.5;
         cursor: pointer;
         transition: opacity 0.15s ease-in-out;

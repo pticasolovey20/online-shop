@@ -1,17 +1,17 @@
 import { useState } from 'react';
 import styles from './Card.module.scss';
 
-const Card = ({ name, price, imgUrl, onFavorite, onPlus }) => {
+const Card = ({ item, onFavorite, onPlus, favorited = false }) => {
     const [status, setStatus] = useState(false);
-    const [isFavorite, setIsFavorite] = useState(false);
+    const [isFavorite, setIsFavorite] = useState(favorited);
 
     const onClickPlus = () => {
-        onPlus();
+        onPlus(item);
         setStatus(!status);
     };
 
     const onClickFavorite = () => {
-        onFavorite();
+        onFavorite(item);
         setIsFavorite(!isFavorite);
     };
 
@@ -24,12 +24,12 @@ const Card = ({ name, price, imgUrl, onFavorite, onPlus }) => {
                     onClick={onClickFavorite}
                 />
             </div>
-            <img width={133} height={112} src={imgUrl} alt="item" />
-            <h5>{name}</h5>
-            <div className="d-flex justify-between align-center">
-                <div className="d-flex flex-column">
+            <img width={133} height={112} src={item.imgUrl} alt="item" />
+            <h5>{item.name}</h5>
+            <div className={styles.priceBlock}>
+                <div className={styles.cardBottom}>
                     <span>Price:</span>
-                    <b>{price} UAH</b>
+                    <b>{item.price} UAH</b>
                 </div>
                 <img
                     className={styles.plus}

@@ -1,11 +1,10 @@
-import './style.scss';
+import styles from './GreenButton.module.scss';
 
 import React from 'react';
 
-const GreenButton = ({ srcImg, altImg, text, onClick }) => {
+const GreenButton = ({ text, onClick }) => {
     return (
-        <button className="greenButton" onClick={onClick}>
-            <img src={srcImg} alt={altImg} />
+        <button className={styles.greenButton} onClick={onClick}>
             {text}
         </button>
     );
