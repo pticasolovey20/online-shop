@@ -12,7 +12,7 @@
 ## :page_with_curl: Implemented functions
 - Open/Close the cart :heavy_check_mark:
 - Add/Remove sneakers to/from the cart :heavy_check_mark:
-- Add sneakers to favorites
+- Add sneakers to favorites :heavy_check_mark:
 - Styles for empty and full carts :heavy_check_mark:
 - Storing data on a fake api :heavy_check_mark:
 
